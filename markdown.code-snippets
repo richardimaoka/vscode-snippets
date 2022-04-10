@@ -1,0 +1,42 @@
+{
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  "terminal name": {
+    "prefix": "terminal name",
+    "scope": "markdown,shellscript",
+    "body": ["terminal: ${1:メイン} (ターミナル)"],
+    "description": "Log output to console"
+  },
+  ":white_check_mark: Result: ": {
+    "prefix": "result",
+    "scope": "markdown,shellscript",
+    "body": [":white_check_mark: Result: ${1:以下のように表示されればOKです}"],
+    "description": "Log output to console"
+  },
+  "foldable": {
+    "prefix": "foldable details",
+    "scope": "markdown,shellscript",
+    "body": [
+      "<details><summary>$1</summary><div>\n\n$2\n---\n\n</div></details>\n"
+    ],
+    "description": "Log output to console"
+  },
+  ":large_orange_diamond: Action:": {
+    "prefix": "action",
+    "scope": "markdown,shellscript",
+    "body": [
+      ":large_orange_diamond: Action: ${1:以下のコマンドを入力してください。}"
+    ],
+    "description": "Log output to console"
+  },
+  "remove this": {
+    "prefix": "remove this",
+    "scope": "markdown,shellscript",
+    "body": [" # REMOVE THIS IN markdown"]
+  }
+}

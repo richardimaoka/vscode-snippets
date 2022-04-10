@@ -1,0 +1,60 @@
+{
+  // Place your snippets for typescriptreact here. Each snippet is defined under a snippet name and has a prefix, body and
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+  // same ids are connected.
+  // Example:
+  "Interface for React Functional Component": {
+    //prefix is what you type to search for the snippet
+    "prefix": "rfif",
+    "body": ["export interface ${1}Props {", "  $2", "}", ""],
+    "description": "export interface react props"
+  },
+  "Export an empty React Function Component": {
+    //prefix is what you type to search for the snippet
+    "prefix": "react function component",
+    "body": [
+      "export const ${TM_FILENAME_BASE} = (): JSX.Element => {",
+      "  return (",
+      "    <div>$2</div>",
+      "  )",
+      "}",
+      ""
+    ],
+    "description": "export react functional component"
+  },
+  "Import from": {
+    //prefix is what you type to search for the snippet
+    "prefix": "impf",
+    "body": ["import {$1} from \"./$2\""],
+    "description": "Import from a file"
+  },
+  "emotion.css import": {
+    //prefix is what you type to search for the snippet
+    "prefix": "emtimp",
+    "body": [
+      "/** @jsxImportSource @emotion/react */",
+      "import { css } from \"@emotion/react\"",
+      ""
+    ],
+    "description": "Macro and Import for emotion.css"
+  },
+  "emotion.css attribute": {
+    //prefix is what you type to search for the snippet
+    "prefix": "emtattr",
+    "body": ["css={css`$1`} "],
+    "description": "emotion.css attribute inside a JSX tag"
+  },
+  "gql @apollo/client import": {
+    //prefix is what you type to search for the snippet
+    "prefix": "gqlimp",
+    "body": ["import { gql } from \"@apollo/client\""],
+    "description": "Macro and Import for emotion.css"
+  },
+  "React.Fragment insertion": {
+    //prefix is what you type to search for the snippet
+    "prefix": "rfragment",
+    "body": ["<React.Fragment />"],
+    "description": "React.Fragment insertion"
+  }
+}
