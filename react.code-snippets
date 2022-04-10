@@ -25,8 +25,8 @@
   },
   "Import from": {
     //prefix is what you type to search for the snippet
-    "prefix": "impf",
-    "body": ["import {$1} from \"./$2\""],
+    "prefix": "import from",
+    "body": ["import {$2} from \"./$1\""],
     "description": "Import from a file"
   },
   "emotion.css import": {
