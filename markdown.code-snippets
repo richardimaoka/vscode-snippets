@@ -30,7 +30,7 @@
     "prefix": "action",
     "scope": "markdown,shellscript",
     "body": [
-      ":large_orange_diamond: Action: ${1:以下のコマンドを入力してください。}"
+      "# :large_orange_diamond: Action: ${1:以下のコマンドを入力してください。}\n\n# ```terminal: メイン\n\n# ```"
     ],
     "description": "Log output to console"
   },
