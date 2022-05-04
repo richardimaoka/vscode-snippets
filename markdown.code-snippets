@@ -34,6 +34,12 @@
     ],
     "description": "Log output to console"
   },
+  "shellcheck disable=SC2164": {
+    "prefix": "cd shellcheck",
+    "scope": "markdown,shellscript",
+    "body": ["# shellcheck disable=SC2164 # REMOVE THIS IN aggregate.sh"],
+    "description": "Log output to console"
+  },
   "remove this": {
     "prefix": "remove this",
     "scope": "markdown,shellscript",
