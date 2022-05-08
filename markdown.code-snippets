@@ -30,19 +30,27 @@
     "prefix": "action",
     "scope": "markdown,shellscript",
     "body": [
-      "# :large_orange_diamond: Action: ${1:以下のコマンドを入力してください。}\n\n# ```terminal: メイン\n# ```"
+      "# :large_orange_diamond: Action: ${1:以下のコマンドを入力してください。}\n\n# ```terminal{2}\n# ```"
+    ],
+    "description": "Log output to console"
+  },
+  ":large_orange_diamond: Action: new terminal": {
+    "prefix": "action new terminal",
+    "scope": "markdown,shellscript",
+    "body": [
+      "# :large_orange_diamond: Action: 新しいターミナルを立ち上げてください。\n# ```"
     ],
     "description": "Log output to console"
   },
   "shellcheck disable=SC2164": {
-    "prefix": "cd shellcheck",
+    "prefix": "shellcheck disable cd",
     "scope": "markdown,shellscript",
     "body": ["# shellcheck disable=SC2164 # REMOVE THIS IN aggregate.sh"],
     "description": "Log output to console"
   },
   "remove this": {
-    "prefix": "remove this",
+    "prefix": "remove this in markdowns",
     "scope": "markdown,shellscript",
-    "body": [" # REMOVE THIS IN markdown"]
+    "body": ["# REMOVE THIS IN markdown"]
   }
 }
