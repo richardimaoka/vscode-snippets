@@ -15,14 +15,16 @@
   ":white_check_mark: Result: ": {
     "prefix": "result",
     "scope": "markdown,shellscript",
-    "body": [":white_check_mark: Result: ${1:以下のように表示されればOKです}"],
+    "body": [
+      "# :white_check_mark: Result: ${1:以下のように表示されればOKです}"
+    ],
     "description": "Log output to console"
   },
   "foldable": {
     "prefix": "foldable details",
     "scope": "markdown,shellscript",
     "body": [
-      "<details><summary>$1</summary><div>\n\n$2\n---\n\n</div></details>\n"
+      "# <details><summary>$1</summary><div>\n\n$2\n# ---\n\n# </div></details>\n"
     ],
     "description": "Log output to console"
   },
