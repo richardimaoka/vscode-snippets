@@ -6,7 +6,7 @@
   // Example:
   "Interface for React Functional Component": {
     //prefix is what you type to search for the snippet
-    "prefix": "rfif",
+    "prefix": "interface for react component",
     "body": ["export interface ${1}Props {", "  $2", "}", ""],
     "description": "export interface react props"
   },
