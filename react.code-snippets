@@ -6,13 +6,13 @@
   // Example:
   "Interface for React Functional Component": {
     //prefix is what you type to search for the snippet
-    "prefix": "interface for react component",
+    "prefix": "interface for a react component",
     "body": ["export interface ${1}Props {", "  $2", "}", ""],
     "description": "export interface react props"
   },
   "Export an empty React Function Component": {
     //prefix is what you type to search for the snippet
-    "prefix": "react function component",
+    "prefix": "const react function component",
     "body": [
       "export const ${TM_FILENAME_BASE} = (): JSX.Element => {",
       "  return (",
@@ -31,7 +31,7 @@
   },
   "emotion.css import": {
     //prefix is what you type to search for the snippet
-    "prefix": "emtimp",
+    "prefix": "import emotion @jsxImportSource",
     "body": [
       "/** @jsxImportSource @emotion/react */",
       "import { css } from \"@emotion/react\"",
@@ -41,7 +41,7 @@
   },
   "emotion.css attribute": {
     //prefix is what you type to search for the snippet
-    "prefix": "emtattr",
+    "prefix": "css attribute in emotion",
     "body": ["css={css`$1`} "],
     "description": "emotion.css attribute inside a JSX tag"
   },
