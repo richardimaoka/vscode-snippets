@@ -5,13 +5,13 @@
   // same ids are connected.
   // Example:
   "Interface for React Functional Component": {
-    //prefix is what you type to search for the snippet
+    //prefix is what you type in to search for the snippet
     "prefix": "interface for a react component",
     "body": ["export interface ${1}Props {", "  $2", "}", ""],
     "description": "export interface react props"
   },
   "Export an empty React Function Component": {
-    //prefix is what you type to search for the snippet
+    //prefix is what you type in to search for the snippet
     "prefix": "const react function component",
     "body": [
       "export const ${TM_FILENAME_BASE} = (): JSX.Element => {",
@@ -23,14 +23,24 @@
     ],
     "description": "export react functional component"
   },
+  "GraphQL Fragment": {
+    //prefix is what you type in to search for the snippet
+    "prefix": "fragment (GraphQL) definition in React",
+    "body": [
+      "${TM_FILENAME_BASE}.fragment = gql`",
+      "  ${TM_FILENAME_BASE} on $1 {",
+      "    $2",
+      "  }`"
+    ]
+  },
   "Import from": {
-    //prefix is what you type to search for the snippet
+    //prefix is what you type in to search for the snippet
     "prefix": "import from",
     "body": ["import {$2} from \"./$1\""],
     "description": "Import from a file"
   },
   "emotion.css import": {
-    //prefix is what you type to search for the snippet
+    //prefix is what you type in to search for the snippet
     "prefix": "import emotion @jsxImportSource",
     "body": [
       "/** @jsxImportSource @emotion/react */",
@@ -40,21 +50,21 @@
     "description": "Macro and Import for emotion.css"
   },
   "emotion.css attribute": {
-    //prefix is what you type to search for the snippet
+    //prefix is what you type in to search for the snippet
     "prefix": "css attribute in emotion",
     "body": ["css={css`$1`} "],
     "description": "emotion.css attribute inside a JSX tag"
   },
   "gql @apollo/client import": {
-    //prefix is what you type to search for the snippet
+    //prefix is what you type in to search for the snippet
     "prefix": "gqlimp",
     "body": ["import { gql } from \"@apollo/client\""],
     "description": "Macro and Import for emotion.css"
   },
   "React.Fragment insertion": {
-    //prefix is what you type to search for the snippet
-    "prefix": "rfragment",
-    "body": ["<React.Fragment />"],
+    //prefix is what you type in to search for the snippet
+    "prefix": "<></> component in React",
+    "body": ["<></>"],
     "description": "React.Fragment insertion"
   }
 }
