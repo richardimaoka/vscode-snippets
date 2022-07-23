@@ -83,5 +83,15 @@
       "cd tutorial-.git",
       "```"
     ]
+  },
+  "generate .sh step": {
+    "prefix": "generate .sh step",
+    "scope": "shellscript",
+    "body": [
+      "#!/bin/sh",
+      "",
+      "cd \"\\$(dirname \"\\$0\")\" || exit # REMOVE THIS IN aggregate.sh",
+      "cd ../ || exit               # REMOVE THIS IN aggregate.sh - cd to the git repository root"
+    ]
   }
 }
