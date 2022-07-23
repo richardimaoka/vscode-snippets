@@ -63,5 +63,25 @@
       "# shellcheck disable=SC2164 # REMOVE THIS IN aggregate.sh",
       "cd \"$(git rev-parse --show-toplevel)\""
     ]
+  },
+  "generate 0.md": {
+    "prefix": "generate 0.md",
+    "scope": "markdown",
+    "body": [
+      "## 0. はじめに",
+      "",
+      "### 事前準備",
+      "",
+      "node と npm がインストール済みであることを確認して下さい。",
+      "",
+      "### git レポジトリのクローン",
+      "",
+      ":large_orange_diamond: Action: ターミナルで以下のコマンドを実行してください",
+      "",
+      "```terminal",
+      "git clone https://github.com/richardimaoka/tutorial-.git",
+      "cd tutorial-.git",
+      "```"
+    ]
   }
 }
