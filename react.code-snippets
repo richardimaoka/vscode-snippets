@@ -7,12 +7,14 @@
   "Interface for React Functional Component": {
     //prefix is what you type in to search for the snippet
     "prefix": "interface for a react component",
+    "scope": "javascript,typescriptreact,typescriptreact",
     "body": ["export interface ${1}Props {", "  $2", "}", ""],
     "description": "export interface react props"
   },
   "Export an empty React Function Component": {
     //prefix is what you type in to search for the snippet
     "prefix": "const react function component",
+    "scope": "javascript,typescriptreact,typescriptreact",
     "body": [
       "export const ${TM_FILENAME_BASE} = (): JSX.Element => {",
       "  return (",
@@ -26,6 +28,7 @@
   "GraphQL Fragment": {
     //prefix is what you type in to search for the snippet
     "prefix": "fragment (GraphQL) definition in React",
+    "scope": "javascript,typescript,typescriptreact",
     "body": [
       "${TM_FILENAME_BASE}.fragment = gql`",
       "  ${TM_FILENAME_BASE} on $1 {",
@@ -36,12 +39,14 @@
   "Import from": {
     //prefix is what you type in to search for the snippet
     "prefix": "import from",
+    "scope": "javascript,typescript,typescriptreact",
     "body": ["import {$2} from \"./$1\""],
     "description": "Import from a file"
   },
   "emotion.css import": {
     //prefix is what you type in to search for the snippet
     "prefix": "import emotion @jsxImportSource",
+    "scope": "javascript,typescript,typescriptreact",
     "body": [
       "/** @jsxImportSource @emotion/react */",
       "import { css } from \"@emotion/react\"",
@@ -52,18 +57,21 @@
   "emotion.css attribute": {
     //prefix is what you type in to search for the snippet
     "prefix": "css attribute in emotion",
+    "scope": "javascript,typescript,typescriptreact",
     "body": ["css={css`$1`} "],
     "description": "emotion.css attribute inside a JSX tag"
   },
   "gql @apollo/client import": {
     //prefix is what you type in to search for the snippet
     "prefix": "gqlimp",
+    "scope": "javascript,typescript,typescriptreact",
     "body": ["import { gql } from \"@apollo/client\""],
     "description": "Macro and Import for emotion.css"
   },
   "React.Fragment insertion": {
     //prefix is what you type in to search for the snippet
     "prefix": "<></> component in React",
+    "scope": "javascript,typescript,typescriptreact",
     "body": ["<></>"],
     "description": "React.Fragment insertion"
   }
