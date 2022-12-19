@@ -6,9 +6,14 @@
   // Example:
   "Interface for React Functional Component": {
     //prefix is what you type in to search for the snippet
-    "prefix": "interface for a react component",
+    "prefix": "interface for react props",
     "scope": "javascript,typescriptreact,typescriptreact",
-    "body": ["export interface ${1}Props {", "  $2", "}", ""],
+    "body": [
+      "export interface ${1}${TM_FILENAME_BASE}Props {",
+      "  $2",
+      "}",
+      ""
+    ],
     "description": "export interface react props"
   },
   "Export an empty React Function Component": {
