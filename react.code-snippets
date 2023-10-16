@@ -4,9 +4,22 @@
   // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
   // same ids are connected.
   // Example:
-  "react component as a whole": {
+  "Next.js Page component in App Router": {
     //prefix is what you type in to search for the snippet
-    "prefix": "react component as a whole",
+    "prefix": ["export default function Page()", "Page in Next.js App Router"],
+    "scope": "javascript,typescript,typescriptreact",
+    "body": [
+      "export default async function Page() {",
+      "  return (",
+      "    <div></div>",
+      "  )",
+      "}",
+      ""  
+    ]
+  },
+  "GraphQL definition in React": {
+    //prefix is what you type in to search for the snippet
+    "prefix": ["component with GraphQL in React", "react component as a whole", "fragment definition with import and component", "import GraphQL and fragment, component"],
     "scope": "javascript,typescript,typescriptreact",
     "body": [
       "import { FragmentType, graphql, useFragment } from \"@/libs/gql\";"
@@ -31,23 +44,9 @@
       ""  
     ]
   },
-  "fragment (GraphQL) definition in React": {
-    //prefix is what you type in to search for the snippet
-    "prefix": "fragment (GraphQL) definition in React",
-    "scope": "javascript,typescript,typescriptreact",
-    "body": [
-      "import { FragmentType, graphql, useFragment } from \"@/libs/gql\";"
-      "",
-      "const fragmentDefinition = graphql(`",
-      "  fragment ${TM_FILENAME_BASE} on $1 {",
-      "    filedName",
-      "  }`",
-      ")"
-    ]
-  },
   "interface for react props": {
     //prefix is what you type in to search for the snippet
-    "prefix": "interface for react props",
+    "prefix": ["interface for react props", "props in React"],
     "scope": "javascript,typescript,typescriptreact",
     "body": [
       //comment to prevent array formatting into one-line
