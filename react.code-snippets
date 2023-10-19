@@ -4,12 +4,64 @@
   // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
   // same ids are connected.
   // Example:
-  "Next.js Page component in App Router": {
+  "import fs promises": {
     //prefix is what you type in to search for the snippet
-    "prefix": ["export default function Page()", "Page in Next.js App Router"],
+    "prefix": ["import promises as fs", "promises import as fs", "fs imported as promises"],
     "scope": "javascript,typescript,typescriptreact",
     "body": [
-      "export default async function Page() {",
+      "import { promises as fs } from \"fs\"\n"
+    ]
+  },
+  "export React props type": {
+    //prefix is what you type in to search for the snippet
+    "prefix": ["export Props as named type"],
+    "scope": "javascript,typescript,typescriptreact",
+    "body": [
+      "export type ${TM_FILENAME_BASE}Props = Props\n"  
+    ]
+  },
+  "Next.js CSS Page props": {
+    //prefix is what you type in to search for the snippet
+    "prefix": [
+      "interface Props for Next.js Page props",
+      "props for Next.js Page props",
+      "page props in Next.js",
+    ],
+    "scope": "javascript,typescript,typescriptreact",
+    "body": [
+      "interface Props {",
+      "  params: { slug: string }; // for dynamic routes only",
+      "  searchParams: { queryString?: string | string[] };",
+      "}",
+      "",
+    ]
+  },
+  "Next.js CSS moduels import": {
+    //prefix is what you type in to search for the snippet
+    "prefix": ["import (CSS modules)"],
+    "scope": "javascript,typescript,typescriptreact",
+    "body": [
+      "import styles from \"./${TM_FILENAME_BASE}.module.css\"\n"  
+    ]
+  },
+  "Next.js CSS moduels className attribute": {
+    //prefix is what you type in to search for the snippet
+    "prefix": ["className (CSS modules)"],
+    "scope": "javascript,typescript,typescriptreact",
+    "body": [
+      " className={styles.component}"  
+    ]
+  },
+  "Next.js Page component in App Router": {
+    //prefix is what you type in to search for the snippet
+    "prefix": [
+      "default Page() in Next.js App router", 
+      "export default function Page() in Next.js App router", 
+      "Page in Next.js App Router"
+    ],
+    "scope": "javascript,typescript,typescriptreact",
+    "body": [
+      "export default function Page() {",
       "  return (",
       "    <div></div>",
       "  )",
