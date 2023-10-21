@@ -12,6 +12,17 @@
       "import { promises as fs } from \"fs\"\n"
     ]
   },
+  "React useEffect()": {
+    //prefix is what you type in to search for the snippet
+    "prefix": ["useEffect empty", "React.useEffect empty"],
+    "scope": "javascript,typescript,typescriptreact",
+    "body": [
+      "useEffect(() => {",
+      "  $1",
+      "}, [])",
+      "",
+    ]
+  },
   "export React props type": {
     //prefix is what you type in to search for the snippet
     "prefix": ["export Props as named type"],
