@@ -6,7 +6,11 @@
   // Example:
   "import fs promises": {
     //prefix is what you type in to search for the snippet
-    "prefix": ["import promises as fs", "promises import as fs", "fs imported as promises"],
+    "prefix": [
+      "import promises as fs",
+      "promises import as fs",
+      "fs imported as promises"
+    ],
     "scope": "javascript,typescript,typescriptreact",
     "body": [
       "import { promises as fs } from \"fs\"\n"
@@ -14,7 +18,10 @@
   },
   "React useEffect()": {
     //prefix is what you type in to search for the snippet
-    "prefix": ["useEffect empty", "React.useEffect empty"],
+    "prefix": [
+      "useEffect empty",
+      "React.useEffect empty"
+    ],
     "scope": "javascript,typescript,typescriptreact",
     "body": [
       "useEffect(() => {",
@@ -25,10 +32,12 @@
   },
   "export React props type": {
     //prefix is what you type in to search for the snippet
-    "prefix": ["export Props as named type"],
+    "prefix": [
+      "export Props as named type"
+    ],
     "scope": "javascript,typescript,typescriptreact",
     "body": [
-      "export type ${TM_FILENAME_BASE}Props = Props\n"  
+      "export type ${TM_FILENAME_BASE}Props = Props\n"
     ]
   },
   "Next.js CSS Page props": {
@@ -47,25 +56,29 @@
   },
   "Next.js CSS moduels import": {
     //prefix is what you type in to search for the snippet
-    "prefix": ["import (CSS modules)"],
+    "prefix": [
+      "import (CSS modules)"
+    ],
     "scope": "javascript,typescript,typescriptreact",
     "body": [
-      "import styles from \"./${TM_FILENAME_BASE}.module.css\"\n"  
+      "import styles from \"./${TM_FILENAME_BASE}.module.css\"\n"
     ]
   },
   "Next.js CSS moduels className attribute": {
     //prefix is what you type in to search for the snippet
-    "prefix": ["className (CSS modules)"],
+    "prefix": [
+      "className (CSS modules)"
+    ],
     "scope": "javascript,typescript,typescriptreact",
     "body": [
-      " className={styles.component}"  
+      " className={styles.component}"
     ]
   },
   "Next.js Page component in App Router": {
     //prefix is what you type in to search for the snippet
     "prefix": [
-      "default Page() in Next.js App router", 
-      "export default function Page() in Next.js App router", 
+      "default Page() in Next.js App router",
+      "export default function Page() in Next.js App router",
       "Page in Next.js App Router"
     ],
     "scope": "javascript,typescript,typescriptreact",
@@ -75,13 +88,14 @@
       "    <div></div>",
       "  )",
       "}",
-      ""  
+      ""
     ]
   },
-  "GraphQ query in React" : {
+  "GraphQ query in React": {
     "prefix": [
       "queryDefinition with GraphQL in React",
-      "const queryDefinition in React GraphQL"],
+      "const queryDefinition in React GraphQL"
+    ],
     "scope": "javascript,typescript,typescriptreact",
     "body": [
       "const queryDefinition = graphql(`",
@@ -95,13 +109,11 @@
     //prefix is what you type in to search for the snippet
     "prefix": [
       "whole component with GraphQL in React",
-      "import GraphQL and fragment, component"
-      "fragment definition with import and component", 
+      "import GraphQL and fragment, component""fragment definition with import and component",
     ],
     "scope": "javascript,typescript,typescriptreact",
     "body": [
-      "import { FragmentType, graphql, useFragment } from \"@/libs/gql\";"
-      "",
+      "import { FragmentType, graphql, useFragment } from \"@/libs/gql\";""",
       "const fragmentDefinition = graphql(`",
       "  fragment ${TM_FILENAME_BASE} on $1ObjType {",
       "    filedName",
@@ -109,40 +121,39 @@
       ")",
       "",
       "interface Props {",
-      "  fragment: FragmentType<typeof fragmentDefinition>;"
-      "}",
-      ""
-      "",
+      "  fragment: FragmentType<typeof fragmentDefinition>;""}",
+      """",
       "export function ${TM_FILENAME_BASE}(props: Props) {",
-      "  const fragment = useFragment(fragmentDefinition, props.fragment)"
-      "  return (",
+      "  const fragment = useFragment(fragmentDefinition, props.fragment)""  return (",
       "    <div></div>",
       "  )",
       "}",
-      ""  
+      ""
     ]
   },
   "interface for react props with GraphQL fragment": {
     //prefix is what you type in to search for the snippet
-    "prefix": ["props in React with GraphQL"],
+    "prefix": [
+      "props in React with GraphQL"
+    ],
     "scope": "javascript,typescript,typescriptreact",
     "body": [
       //comment to prevent array formatting into one-line
       "interface Props {",
-      "  fragment: FragmentType<typeof fragmentDefinition>;$1"
-      "}",
+      "  fragment: FragmentType<typeof fragmentDefinition>;$1""}",
       "$2"
     ],
   },
   "interface for react props": {
     //prefix is what you type in to search for the snippet
-    "prefix": ["props in React"],
+    "prefix": [
+      "props in React"
+    ],
     "scope": "javascript,typescript,typescriptreact",
     "body": [
       //comment to prevent array formatting into one-line
       "interface Props {",
-      "  $1"
-      "}",
+      "  $1""}",
       "$2"
     ],
   },
@@ -152,17 +163,41 @@
     "scope": "javascript,typescriptreact,typescriptreact",
     "body": [
       "export function ${TM_FILENAME_BASE}(props: Props) {",
-      "  const fragment = useFragment(fragmentDefinition, props.fragment)"
-      "  return (",
+      "  const fragment = useFragment(fragmentDefinition, props.fragment)""  return (",
       "    <div>$1</div>",
       "  )",
       "}",
       ""
     ],
   },
+  "React whole component": {
+    //prefix is what you type in to search for the snippet
+    "prefix": [
+      "whole component in React",
+      "React whole component"
+    ],
+    "scope": "javascript,typescript,typescriptreact",
+    "body": [
+      "import styles from \"./${TM_FILENAME_BASE}.module.css\"\n",
+      "",
+      "interface Props {",
+      "  $2""}",
+      "",
+      "export function ${TM_FILENAME_BASE}(props: Props) {",
+      "  return (",
+      "    <div className={styles.component}>$1</div>",
+      "  )",
+      "}",
+      ""
+    ],
+    "description": "React.Fragment insertion"
+  },
   "React simple component": {
     //prefix is what you type in to search for the snippet
-    "prefix": ["bare component in React", "React bare component"],
+    "prefix": [
+      "bare component in React",
+      "React bare component"
+    ],
     "scope": "javascript,typescript,typescriptreact",
     "body": [
       "export function ${TM_FILENAME_BASE}(props: Props) {",
@@ -178,10 +213,12 @@
     //prefix is what you type in to search for the snippet
     "prefix": "<></> component in React",
     "scope": "javascript,typescript,typescriptreact",
-    "body": ["<></>"],
+    "body": [
+      "<></>"
+    ],
     "description": "React.Fragment insertion"
   },
-    "React simple TM_FILENAME_BASE": {
+  "React simple TM_FILENAME_BASE": {
     //prefix is what you type in to search for the snippet
     "prefix": "file basename",
     "scope": "javascript,typescript,typescriptreact",
