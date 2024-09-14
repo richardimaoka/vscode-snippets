@@ -8,23 +8,36 @@
 	// Example:
 	"Print to console": {
 		"scope": "go",
-		"prefix": ["func TestXXX", "test func in Go"],
+		"prefix": [
+			"func TestXXX",
+			"test func in Go"
+		],
 		"body": [
 			"func Test$1(t *testing.T) {",
-			"	 cases := []struct {",
+			"  cases := []struct {",
 			"    $2inputFile  string",
 			"    goldenFile string",
 			"  }{",
-			"    {\"$3\",\"\"},",	
+			"    {\"$3\",\"\"},",
 			"  }",
 			"",
 			"  for _, c := range cases {",
-			"	   t.Run(c.inputFile, func(t *testing.T) {",
+			"    t.Run(c.inputFile, func(t *testing.T) {",
 			"",
-			"	   })",
-			"   }",
+			"    })",
+			"  }",
 			"}",
-""
+			""
+		],
+		"description": "Log output to console"
+	},
+	"json struct tag": {
+		"scope": "go",
+		"prefix": [
+			"json struct tag"
+		],
+		"body": [
+			"`json:\"$1\"`"
 		],
 		"description": "Log output to console"
 	}

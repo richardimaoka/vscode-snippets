@@ -17,11 +17,39 @@
 	// }
 	"React component": {
 		"prefix": ".component",
+		"scope": "css",
 		"body": [
 			".component {",
 			"  $1",
 			"}"
 		],
 		"description": "React component"
+	},
+	"box shadow": {
+		"prefix": "box shadow",
+		"body": [
+			"box-shadow: rgba(0, 0, 0, 0.11) 0px 0px 2.9px 0px, rgba(0, 0, 0, 0.13) 0px 1.6px 3.6px 0px;"
+		],
+		"description": "your description"
+	},
+	"flex centering": {
+		"prefix": "flex centering",
+		"body": [
+			"display: flex;",
+			"justify-content: center;",
+			"align-items: center;"
+		],
+		"description": "your description"
+	},
+	"padding all": {
+		"prefix": "padding all",
+		"body": [
+			"padding-top: 1px;",
+			"padding-bottom: 1px;",
+			"padding-left: 1px;",
+			"padding-right: 1px;",
+			""
+		],
+		"description": "your description"
 	}
 }
