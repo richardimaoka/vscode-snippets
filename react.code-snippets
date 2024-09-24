@@ -267,4 +267,16 @@
     ],
     "description": "React.Fragment insertion"
   },
+  "map components": {
+    "prefix": "map components",
+    "body": [
+      "{${1:$CLIPBOARD}.map((x) => (",
+      "  <${2:Component}",
+      "    key={x.id}",
+      "    arg={x.name}",
+      "  />",
+      "))}",
+    ],
+    "description": ""
+  },
 }

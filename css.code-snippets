@@ -44,12 +44,45 @@
 	"padding all": {
 		"prefix": "padding all",
 		"body": [
-			"padding-top: 1px;",
-			"padding-bottom: 1px;",
-			"padding-left: 1px;",
-			"padding-right: 1px;",
+			"padding-top: 8px;",
+			"padding-bottom: 8px;",
+			"padding-left: 8px;",
+			"padding-right: 8px;",
 			""
 		],
 		"description": "your description"
-	}
+	},
+	"grid": {
+		"prefix": "grid templates",
+		"body": [
+			"  display: grid;",
+			"  grid-template-columns: auto auto 1fr;",
+			"  grid-template-rows: auto auto 1fr;",
+			"  grid-template-areas:",
+			"    \". . . \"",
+			"    \". . . \";",
+			"  column-gap: 0px;",
+			"  row-gap: 0px;",
+			"",
+			"  align-content: normal;",
+			"  align-items: normal;",
+			"  justify-content: normal;",
+			"  justify-items: normal;",
+		],
+	},
+	"grid area": {
+		"prefix": "grid area",
+		"body": [
+			".$CLIPBOARD {",
+			"  grid-area: $CLIPBOARD;",
+			"}",
+		],
+	},
+	"font": {
+		"prefix": "font size and weight",
+		"body": [
+			"  font-size: 1rem;",
+			"  font-weight: 400;",
+		],
+	},
 }
