@@ -72,6 +72,13 @@
       "}",
     ]
   },
+  "props argument in React component": {
+    "prefix": "props argument",
+    "body": [
+      "props: Props",
+    ],
+    "description": ""
+  },
   "Next.js CSS moduels import": {
     //prefix is what you type in to search for the snippet
     "prefix": [
@@ -188,6 +195,7 @@
   "React whole component without props": {
     //prefix is what you type in to search for the snippet
     "prefix": [
+      "component without any props",
       "whole component in React without props",
       "React whole component without props"
     ],
@@ -270,7 +278,7 @@
   "map components": {
     "prefix": "map components",
     "body": [
-      "{${1:$CLIPBOARD}.map((x) => (",
+      "{${1:componentItems}.map((x) => (",
       "  <${2:Component}",
       "    key={x.id}",
       "    arg={x.name}",
