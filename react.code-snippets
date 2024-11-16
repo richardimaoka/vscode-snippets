@@ -176,8 +176,8 @@
     "body": [
       //comment to prevent array formatting into one-line
       "interface Props {",
-      "  $1}",
-      "$2"
+      "  $1",
+      "}",
     ],
   },
   "export const react function component": {
