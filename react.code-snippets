@@ -66,7 +66,7 @@
     ],
     "scope": "javascript,typescript,typescriptreact",
     "body": [
-      "interface Props {",
+      "type Props = {",
       "  params: { slug: string }; // for dynamic routes only",
       "  searchParams: { queryString?: string | string[] };",
       "}",
@@ -144,7 +144,7 @@
       "  }`",
       ")",
       "",
-      "interface Props {",
+      "type Props = {",
       "  fragment: FragmentType<typeof fragmentDefinition>;}",
       "",
       "export function ${TM_FILENAME_BASE}(props: Props) {",
@@ -162,7 +162,7 @@
     "scope": "javascript,typescript,typescriptreact",
     "body": [
       //comment to prevent array formatting into one-line
-      "interface Props {",
+      "type Props = {",
       "  fragment: FragmentType<typeof fragmentDefinition>;$1}",
       "$2"
     ],
@@ -175,7 +175,7 @@
     "scope": "javascript,typescript,typescriptreact",
     "body": [
       //comment to prevent array formatting into one-line
-      "interface Props {",
+      "type Props = {",
       "  $1",
       "}",
     ],
@@ -215,14 +215,16 @@
     //prefix is what you type in to search for the snippet
     "prefix": [
       "whole component in React with props",
-      "React whole component with props"
+      "React whole component with props",
+      "component and props",
     ],
     "scope": "javascript,typescript,typescriptreact",
     "body": [
       "import styles from \"./${TM_FILENAME_BASE}.module.css\"\n",
       "",
-      "interface Props {",
-      "  $2}",
+      "type Props = {",
+      "  $2",
+      "}",
       "",
       "export function ${TM_FILENAME_BASE}(props: Props) {",
       "  return (",
@@ -287,4 +289,14 @@
     ],
     "description": ""
   },
+  "exhaustiveness check": {
+    "prefix": "exhaustiveness check",
+    "body": [
+      "//https://www.typescriptlang.org/docs/handbook/2/narrowing.html#exhaustiveness-checking",
+      "default:",
+      "  const _exhaustiveCheck: never = v;",
+      "  return _exhaustiveCheck;"
+    ]
+  }
+}
 }
