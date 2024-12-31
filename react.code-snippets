@@ -292,11 +292,16 @@
   "exhaustiveness check": {
     "prefix": "exhaustiveness check",
     "body": [
-      "//https://www.typescriptlang.org/docs/handbook/2/narrowing.html#exhaustiveness-checking",
       "default:",
-      "  const _exhaustiveCheck: never = v;",
+      "  //https://www.typescriptlang.org/docs/handbook/2/narrowing.html#exhaustiveness-checking",
+      "  const _exhaustiveCheck: never = v$1;",
       "  return _exhaustiveCheck;"
     ]
+  },
+  "console.log()": {
+    "prefix": "console.log",
+    "body": [
+      "console.log(\"${TM_FILENAME_BASE}$1\", $2)"
+    ]
   }
-}
 }
