@@ -195,6 +195,7 @@
   "React whole component without props": {
     //prefix is what you type in to search for the snippet
     "prefix": [
+      "cmow - component in React without any props",
       "component without any props",
       "whole component in React without props",
       "React whole component without props"
@@ -214,6 +215,7 @@
   "React whole component with props": {
     //prefix is what you type in to search for the snippet
     "prefix": [
+      "cmo - component in React with props",
       "whole component in React with props",
       "React whole component with props",
       "component and props",
